@@ -10,14 +10,13 @@ import lombok.*;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "voting_candidate")
+@Table(name = "votingCandidate_table")
 public class ElectionCandidateHistoryInfo extends BaseEntity{
     private String candidatesBiography;
 
     private int age;
 
     private String candidateProfilePicture;
-
 
 
 }

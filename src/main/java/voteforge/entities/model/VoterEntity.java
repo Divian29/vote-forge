@@ -3,6 +3,7 @@ package voteforge.entities.model;
 import jakarta.persistence.*;
 import lombok.*;
 import voteforge.entities.enums.ElectionCandidate;
+import voteforge.entities.enums.Roles;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -38,6 +39,8 @@ public class VoterEntity extends BaseEntity{
     @Enumerated(EnumType.STRING)
     private ElectionCandidate electionCandidates;
 
+    @Enumerated(EnumType.STRING)
+    private Roles roles;
 
     private boolean isVerified;
 
