@@ -47,6 +47,4 @@ public class VoterEntity extends BaseEntity{
     @OneToOne(mappedBy = "voterEntity")
     private VotersHistory votersHistory;
 
-
-
 }
